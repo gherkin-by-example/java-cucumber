@@ -7,5 +7,5 @@
 ```
 git clone https://github.com/gherkin-by-example/java-cucumber.git
 cd java-cucumber
-./mvnw test
+mvn test
 ```
