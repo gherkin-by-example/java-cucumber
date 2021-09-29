@@ -1,6 +1,6 @@
 # java-cucumber
 
-![Github Actions](https://github.com/gherkin-by-example/java-jbehave/actions/workflows/maven.yml/badge.svg)
+[![Github Actions](https://github.com/gherkin-by-example/java-jbehave/actions/workflows/maven.yml/badge.svg)](https://github.com/gherkin-by-example/java-cucumber/actions/workflows/maven.yml)
 
 ## Testing
 
