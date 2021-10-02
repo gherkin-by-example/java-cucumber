@@ -6,8 +6,7 @@ import io.cucumber.java.en.When;
 
 import static org.junit.Assert.*;
 
-public class StepDefinitions {
-
+public class CalculatorSteps {
 	private Calculator calc = new Calculator();
 	private int actual;
 
@@ -29,6 +28,4 @@ public class StepDefinitions {
 	@Then("the result should be {int}")
 	public void thenTheResultShouldBe(int x) {
 		assertEquals(x, actual);
-	}
-
-}
+	}}

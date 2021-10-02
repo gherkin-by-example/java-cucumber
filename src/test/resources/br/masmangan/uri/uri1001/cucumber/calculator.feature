@@ -1,4 +1,3 @@
-@feature
 Feature: Calculator
 
 Narrative:
@@ -7,7 +6,6 @@ In order to avoid silly mistakes
 As a math novice
 I want to be told the sum of two numbers
 
-@scenario
 Scenario Outline: Add two numbers
 
 Given the first number is <a>
