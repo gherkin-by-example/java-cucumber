@@ -1,3 +1,4 @@
+@unit
 Feature: Calculator
 
 Narrative:
