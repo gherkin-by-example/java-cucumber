@@ -39,7 +39,7 @@ public class Main {
 		
 		s.close();
 
-		out.printf("X = %d\n", c.getSum());
+		out.printf("X = %d%n", c.getSum());
 
 	}
 
