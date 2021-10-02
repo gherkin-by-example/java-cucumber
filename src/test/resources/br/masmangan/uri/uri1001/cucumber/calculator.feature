@@ -1,4 +1,4 @@
-@unit
+@domain
 Feature: Calculator
 
 Narrative:

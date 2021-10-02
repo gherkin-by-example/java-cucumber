@@ -25,13 +25,13 @@ Scenario: Run program with -10 and 4 (neg,pos)
 
 Given the input is
 """
-10
-9
+-10
+4
 """
 When the program runs
 Then the output should be
 """
-X = 19
+X = -6
 
 """
 
@@ -39,12 +39,12 @@ Scenario: Run program with 15 and -7 (pos,neg)
 
 Given the input is
 """
-10
-9
+15
+-7
 """
 When the program runs
 Then the output should be
 """
-X = 19
+X = 8
 
 """
