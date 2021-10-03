@@ -9,7 +9,9 @@ This is a solution to URI Online Judge 1001 problem: add two numbers.
 The solution process presented here adopts a behaviour-driven development style. The original problem statement is first modelled using Gherkin language. 
 
 The code also adopts a domain-driven style using Java language. Two levels of modelling are adopted: system level and domain level, each level has its Gherkin specification.
+
 At the system level the behaviour is described as a text-oriented input and output. This behaviour verifies that the solution can be accepted by URI Online Judge.
+
 At the domain level the behaviour description adopts a more conceptual style, independent of a system interface. This second level adds a separation of concerns between boundary and model.
 
 * The system level specification is presented here: https://github.com/gherkin-by-example/java-cucumber/blob/main/src/test/resources/br/masmangan/uri/uri1001/cucumber/uri1001.feature
