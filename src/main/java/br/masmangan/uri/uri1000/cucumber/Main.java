@@ -22,8 +22,12 @@ package br.masmangan.uri.uri1000.cucumber;
 
 import static java.lang.System.out;
 
-public class Main {
+public final class Main {
 
+	private Main() {
+		
+	}
+	
 	public static void main(String[] args) {
 		Greeter greeter = new Greeter();
 		out.println(greeter.sayHello());

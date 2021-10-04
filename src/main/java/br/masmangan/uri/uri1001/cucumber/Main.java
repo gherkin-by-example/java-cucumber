@@ -24,8 +24,12 @@ import java.util.*;
 import static java.lang.System.out;
 import static java.lang.System.in;
 
-public class Main {
+public final class Main {
 
+	private Main() {
+		
+	}
+	
 	public static void main(String[] args) {
 
 		Calculator c;
