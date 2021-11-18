@@ -2,9 +2,9 @@
 [![Github Actions](https://github.com/gherkin-by-example/java-jbehave/actions/workflows/maven.yml/badge.svg)](https://github.com/gherkin-by-example/java-cucumber/actions/workflows/maven.yml)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=gherkin-by-example_java-cucumber&metric=alert_status)](https://sonarcloud.io/dashboard?id=gherkin-by-example_java-cucumber)
 
-This is a solution to URI Online Judge 1001 problem: add two numbers. 
-* The problem statement can be found here: https://www.urionlinejudge.com.br/judge/en/problems/view/1001.
-* An example solution in Java and other programming languages can be found here: https://www.urionlinejudge.com.br/judge/pt/faqs/about/examples.
+This is a solution to BeeCrowd Bee 1000 and Bee 1001 problems: greetings and add two numbers. 
+* The problem statement can be found here: https://www.beecrowd.com.br/judge/en/problems/view/1001.
+* An example solution in Java and other programming languages can be found here: https://www.beecrowd.com.br/judge/pt/faqs/about/examples.
 
 The solution process presented here adopts a behaviour-driven development style. The original problem statement is first modelled using Gherkin language. 
 The code also adopts a domain-driven style using Java language. 
