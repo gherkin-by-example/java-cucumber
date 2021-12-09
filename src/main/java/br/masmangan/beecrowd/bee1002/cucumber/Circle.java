@@ -1,4 +1,4 @@
-package br.masmangan.beecrowd.uri1002.cucumber;
+package br.masmangan.beecrowd.bee1002.cucumber;
 
 public class Circle {
     public static final double PI = 3.14159;

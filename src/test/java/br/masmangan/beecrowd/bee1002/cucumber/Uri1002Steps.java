@@ -1,4 +1,4 @@
-package br.masmangan.beecrowd.uri1002.cucumber;
+package br.masmangan.beecrowd.bee1002.cucumber;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
