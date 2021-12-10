@@ -25,7 +25,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 import java.io.*;
-import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 
 import static org.junit.Assert.assertEquals;
 
@@ -41,7 +41,7 @@ public class Uri1002Steps {
 
     @When("program runs")
     public void program_runs() throws IOException  {
-        InputStream inputStream = new ByteArrayInputStream(input.getBytes(Charset.forName("UTF-8")));
+        InputStream inputStream = new ByteArrayInputStream(input.getBytes(StandardCharsets.UTF_8));
 
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
 

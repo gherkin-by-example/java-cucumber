@@ -38,11 +38,11 @@ public final class Main {
         c = new Circle();
         s = new Scanner(in);
 
-        double r = s.nextDouble();
+        c.setRadius(s.nextDouble());
 
         s.close();
 
-        out.printf("A=%.4f%n", 3.14159 * r * r);
+        out.printf("A=%.4f%n", c.getArea());
 
     }
 

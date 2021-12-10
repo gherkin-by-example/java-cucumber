@@ -26,7 +26,8 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class GreeterSteps {
-	private Greeter g = new Greeter();
+
+	private final Greeter g = new Greeter();
 	private String actual;
 
 	@When("greeting is done")

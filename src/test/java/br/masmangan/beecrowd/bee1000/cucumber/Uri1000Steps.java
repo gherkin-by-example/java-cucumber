@@ -23,7 +23,6 @@ package br.masmangan.beecrowd.bee1000.cucumber;
 import static org.junit.Assert.assertEquals;
 
 import java.io.ByteArrayOutputStream;
-import java.io.IOException;
 import java.io.PrintStream;
 
 import io.cucumber.java.en.Then;
@@ -34,7 +33,7 @@ public class Uri1000Steps {
 	private String actual;
 
 	@When("program runs")
-	public void program_runs() throws IOException {
+	public void program_runs() {
 
 		ByteArrayOutputStream baos = new ByteArrayOutputStream();
 		PrintStream outputStream = new PrintStream(baos);

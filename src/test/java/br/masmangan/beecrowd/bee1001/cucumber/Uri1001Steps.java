@@ -31,7 +31,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.PrintStream;
-import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 
 public class Uri1001Steps {
 
@@ -46,7 +46,7 @@ public class Uri1001Steps {
 	@When("program runs")
 	public void program_runs() throws IOException {
 
-		InputStream inputStream = new ByteArrayInputStream(input.getBytes(Charset.forName("UTF-8")));
+		InputStream inputStream = new ByteArrayInputStream(input.getBytes(StandardCharsets.UTF_8));
 
 		ByteArrayOutputStream baos = new ByteArrayOutputStream();
 		PrintStream outputStream = new PrintStream(baos);

@@ -27,7 +27,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.PrintStream;
-import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 
 import org.junit.Test;
 
@@ -39,7 +39,7 @@ public class MainTest {
 		String expected = "X = 19\n";
 		String actual;
 
-		InputStream inputStream = new ByteArrayInputStream(input.getBytes(Charset.forName("UTF-8")));
+		InputStream inputStream = new ByteArrayInputStream(input.getBytes(StandardCharsets.UTF_8));
 
 		ByteArrayOutputStream baos = new ByteArrayOutputStream();
 		PrintStream outputStream = new PrintStream(baos);

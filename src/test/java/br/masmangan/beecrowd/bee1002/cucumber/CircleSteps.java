@@ -29,12 +29,13 @@ import static org.junit.Assert.assertEquals;
 public class CircleSteps {
 
     public static final double DELTA = 0.0001;
-    private Circle c = new Circle();
+
+    private final Circle c = new Circle();
     private double actual;
 
     @Given("pi is {double}")
     public void pi_is(double pi) {
-        assertEquals(pi, c.PI, DELTA);
+        assertEquals(pi, Circle.PI, DELTA);
     }
     @Given("radius is {double}")
     public void radius_is(double radius) {
