@@ -61,8 +61,6 @@ public class Uri1001Steps {
 
 		actual = baos.toString();
 
-		// assertEquals(expected, actual);
-
 		inputStream.close();
 		outputStream.close();
 

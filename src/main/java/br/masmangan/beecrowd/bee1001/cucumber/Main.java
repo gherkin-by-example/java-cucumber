@@ -31,7 +31,6 @@ public final class Main {
 	}
 	
 	public static void main(String[] args) {
-
 		Calculator c;
 		Scanner s;
 
@@ -44,7 +43,6 @@ public final class Main {
 		s.close();
 
 		out.printf("X = %d%n", c.getSum());
-
 	}
 
 }
