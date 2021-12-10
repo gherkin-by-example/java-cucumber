@@ -18,54 +18,37 @@
  * Please visit Gherkin By Example at https://github.com/gherkin-by-example 
  * if you need additional information or have any questions.
  */
-package br.masmangan.beecrowd.bee1001.cucumber;
+package br.masmangan.beecrowd.bee1000.cucumber;
 
-import io.cucumber.java.en.Given;
+import static org.junit.Assert.assertEquals;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-import static org.junit.Assert.*;
+public class Bee1000Steps {
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.PrintStream;
-import java.nio.charset.StandardCharsets;
-
-public class Uri1001Steps {
-
-	String input;
 	private String actual;
 
-	@Given("input is")
-	public void input_is(String input) {
-		this.input = input;
-	}
-
 	@When("program runs")
-	public void program_runs() throws IOException {
-
-		InputStream inputStream = new ByteArrayInputStream(input.getBytes(StandardCharsets.UTF_8));
+	public void program_runs() {
 
 		ByteArrayOutputStream baos = new ByteArrayOutputStream();
 		PrintStream outputStream = new PrintStream(baos);
 
 		PrintStream previousOut = System.out;
-		InputStream previousIn = System.in;
 
-		System.setIn(inputStream);
 		System.setOut(outputStream);
 
 		Main.main(null);
 
 		actual = baos.toString();
 
-		inputStream.close();
 		outputStream.close();
 
 		System.setOut(previousOut);
-		System.setIn(previousIn);
 	}
 
 	@Then("output should be")

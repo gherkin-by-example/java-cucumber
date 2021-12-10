@@ -29,7 +29,7 @@ import java.nio.charset.StandardCharsets;
 
 import static org.junit.Assert.assertEquals;
 
-public class Uri1002Steps {
+public class Bee1002Steps {
 
     private String input;
     private String actual;
