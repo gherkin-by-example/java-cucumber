@@ -41,8 +41,8 @@ public class MainTest {
 
 		InputStream inputStream = new ByteArrayInputStream(input.getBytes(StandardCharsets.UTF_8));
 
-		ByteArrayOutputStream baos = new ByteArrayOutputStream();
-		PrintStream outputStream = new PrintStream(baos);
+		ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+		PrintStream outputStream = new PrintStream(byteArrayOutputStream);
 
 		PrintStream previousOut = System.out;
 		InputStream previousIn = System.in;
@@ -52,7 +52,7 @@ public class MainTest {
 
 		Main.main(null);
 
-		actual = baos.toString();
+		actual = byteArrayOutputStream.toString();
 
 		assertEquals(expected, actual);
 

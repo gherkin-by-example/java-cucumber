@@ -33,10 +33,11 @@ This solution adopts one boundary class (Main.java) and an auxiliary class (Gree
 At the system level the behaviour is described as a text-oriented input and output. 
 This behaviour verifies that the solution can be accepted by BeeCrowd Online Judge.
 * The system level specification is presented here: 
-* https://github.com/gherkin-by-example/java-cucumber/blob/main/src/test/resources/br/masmangan/beecrowd/bee1001/cucumber/uri1001.feature
+* https://github.com/gherkin-by-example/java-cucumber/blob/main/src/test/resources/br/masmangan/beecrowd/bee1001/cucumber/bee1001.feature
 
 At the domain level the behaviour description adopts a more conceptual style, independent of a system interface. This second level adds a separation of concerns between boundary and model.
-* The domain level specification is presented here: https://github.com/gherkin-by-example/java-cucumber/blob/main/src/test/resources/br/masmangan/uri/uri1001/cucumber/calculator.feature
+* The domain level specification is presented here: 
+* https://github.com/gherkin-by-example/java-cucumber/blob/main/src/test/resources/br/masmangan/beecrowd/bee1001/cucumber/calculator.feature
 
 Gherkin specification and solution are a port from Specflow guide.
 * Specflow getting started guide can be found here: https://docs.specflow.org/projects/getting-started/en/latest/index.html

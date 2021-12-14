@@ -48,8 +48,8 @@ public class Bee1001Steps {
 
 		InputStream inputStream = new ByteArrayInputStream(input.getBytes(StandardCharsets.UTF_8));
 
-		ByteArrayOutputStream baos = new ByteArrayOutputStream();
-		PrintStream outputStream = new PrintStream(baos);
+		ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+		PrintStream outputStream = new PrintStream(byteArrayOutputStream);
 
 		PrintStream previousOut = System.out;
 		InputStream previousIn = System.in;
@@ -59,7 +59,7 @@ public class Bee1001Steps {
 
 		Main.main(null);
 
-		actual = baos.toString();
+		actual = byteArrayOutputStream.toString();
 
 		inputStream.close();
 		outputStream.close();

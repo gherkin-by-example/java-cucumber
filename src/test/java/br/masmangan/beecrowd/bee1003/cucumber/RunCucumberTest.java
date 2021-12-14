@@ -18,42 +18,14 @@
  * Please visit Gherkin By Example at https://github.com/gherkin-by-example 
  * if you need additional information or have any questions.
  */
-package br.masmangan.beecrowd.bee1000.cucumber;
+package br.masmangan.beecrowd.bee1003.cucumber;
 
-import static org.junit.Assert.assertEquals;
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
 
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
-
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
-
-public class Bee1000Steps {
-
-	private String actual;
-
-	@When("program runs")
-	public void program_runs() {
-
-		ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-		PrintStream outputStream = new PrintStream(byteArrayOutputStream);
-
-		PrintStream previousOut = System.out;
-
-		System.setOut(outputStream);
-
-		Main.main(null);
-
-		actual = byteArrayOutputStream.toString();
-
-		outputStream.close();
-
-		System.setOut(previousOut);
-	}
-
-	@Then("output should be")
-	public void output_should_be(String expected) {
-		assertEquals(expected, actual);
-	}
+@RunWith(Cucumber.class)
+@CucumberOptions(plugin = {"pretty"})
+public class RunCucumberTest {
 
 }

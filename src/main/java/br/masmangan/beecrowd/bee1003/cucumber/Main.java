@@ -18,42 +18,34 @@
  * Please visit Gherkin By Example at https://github.com/gherkin-by-example 
  * if you need additional information or have any questions.
  */
-package br.masmangan.beecrowd.bee1000.cucumber;
+package br.masmangan.beecrowd.bee1003.cucumber;
 
-import static org.junit.Assert.assertEquals;
+import br.masmangan.beecrowd.bee1001.cucumber.Calculator;
 
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
+import java.util.Scanner;
 
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
+import static java.lang.System.in;
+import static java.lang.System.out;
 
-public class Bee1000Steps {
+public final class Main {
 
-	private String actual;
-
-	@When("program runs")
-	public void program_runs() {
-
-		ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-		PrintStream outputStream = new PrintStream(byteArrayOutputStream);
-
-		PrintStream previousOut = System.out;
-
-		System.setOut(outputStream);
-
-		Main.main(null);
-
-		actual = byteArrayOutputStream.toString();
-
-		outputStream.close();
-
-		System.setOut(previousOut);
+	private Main() {
+		
 	}
+	
+	public static void main(String[] args) {
+		Calculator c;
+		Scanner s;
 
-	@Then("output should be")
-	public void output_should_be(String expected) {
-		assertEquals(expected, actual);
+		c = new Calculator();
+		s = new Scanner(in);
+		
+		c.setA(s.nextInt());
+		c.setB(s.nextInt());
+		
+		s.close();
+
+		out.printf("SOMA = %d%n", c.getSum());
 	}
 
 }
