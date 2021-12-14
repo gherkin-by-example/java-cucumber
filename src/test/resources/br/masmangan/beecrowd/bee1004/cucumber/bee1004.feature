@@ -18,49 +18,54 @@
 # Please visit Gherkin By Example at https://github.com/gherkin-by-example
 # if you need additional information or have any questions.
 @system
-Feature: Bee1002 CLI
+Feature: Bee1004 CLI
 
-Narrative:
+  Narrative:
 
-In order to avoid silly mistakes
-As a math novice
-I want to be told the area of a circle
+  In order to avoid silly mistakes
+  As a math novice
+  I want to be told the product of two numbers
 
-Scenario: Run program with input 2.00
+  Scenario: Run program with input 3 and 9 (pos, pos)
 
-Given input is
+    Given input is
 """
-2.00
+3
+9
 """
-When program runs
-Then output should be
+    When program runs
+    Then output should be
 """
-A=12.5664
-
-"""
-
-Scenario: Run program with input 100.64
-
-Given input is
-"""
-100.64
-"""
-When program runs
-Then output should be
-"""
-A=31819.3103
+PROD = 27
 
 """
 
-Scenario: Run program with input 150.00
 
-Given input is
+  Scenario: Run program with input -30 and 10 (neg, pos)
+
+    Given input is
 """
-150.00
+-30
+10
 """
-When program runs
-Then output should be
+    When program runs
+    Then output should be
 """
-A=70685.7750
+PROD = -300
+
+"""
+
+
+  Scenario: Run program with input 0 and 9 (zero, zero)
+
+    Given input is
+"""
+0
+9
+"""
+    When program runs
+    Then output should be
+"""
+PROD = 0
 
 """

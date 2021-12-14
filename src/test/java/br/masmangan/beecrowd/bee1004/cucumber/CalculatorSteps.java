@@ -18,27 +18,36 @@
  * Please visit Gherkin By Example at https://github.com/gherkin-by-example 
  * if you need additional information or have any questions.
  */
-package br.masmangan.beecrowd.bee1001.cucumber;
+package br.masmangan.beecrowd.bee1004.cucumber;
 
-public class Calculator {
+import br.masmangan.beecrowd.bee1001.cucumber.Calculator;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
-	private int a;
-	private int b;
+import static org.junit.Assert.assertEquals;
 
-	public void setA(int a) {
-		this.a = a;
+public class CalculatorSteps {
+
+	private final Calculator calc = new Calculator();
+	private int actual;
+
+	@Given("first number is {int}")
+	public void givenTheFirstNumberIs(int a) {
+		calc.setA(a);
 	}
 
-	public void setB(int b) {
-		this.b = b;
+	@Given("second number is {int}")
+	public void givenTheSecondNumberIs(int b) {
+		calc.setB(b);
 	}
 
-	public int getSum() {
-		return a + b;
+	@When("two numbers are multiplied")
+	public void whenTheTwoNumbersAreAdded() {
+		actual = calc.getProduct();
 	}
 
-	public int getProduct() {
-		return a * b;
-	}
-
-}
+	@Then("result should be {int}")
+	public void thenTheResultShouldBe(int x) {
+		assertEquals(x, actual);
+	}}

@@ -1,7 +1,7 @@
 #
 # Copyright (C) 2021, Gherkin By Example and/or its contributors. All rights reserved.
 # DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
-#
+# 
 # This software is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
@@ -14,53 +14,27 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with this code.  If not, see <https://www.gnu.org/licenses/>.
-#
-# Please visit Gherkin By Example at https://github.com/gherkin-by-example
+#	
+# Please visit Gherkin By Example at https://github.com/gherkin-by-example 
 # if you need additional information or have any questions.
-@system
-Feature: Bee1002 CLI
+@domain
+Feature: Calculator
 
 Narrative:
 
 In order to avoid silly mistakes
 As a math novice
-I want to be told the area of a circle
+I want to be told the product of two numbers
 
-Scenario: Run program with input 2.00
+Scenario Outline: Multiply two numbers
 
-Given input is
-"""
-2.00
-"""
-When program runs
-Then output should be
-"""
-A=12.5664
+Given first number is <a>
+And second number is <b>
+When two numbers are multiplied
+Then result should be <prod>
 
-"""
-
-Scenario: Run program with input 100.64
-
-Given input is
-"""
-100.64
-"""
-When program runs
-Then output should be
-"""
-A=31819.3103
-
-"""
-
-Scenario: Run program with input 150.00
-
-Given input is
-"""
-150.00
-"""
-When program runs
-Then output should be
-"""
-A=70685.7750
-
-"""
+Examples:
+|  a |  b |  prod |
+| 3 |  9 | 27 |
+|-30 |  10 | -300 |
+| 0 | 9 |  0 |

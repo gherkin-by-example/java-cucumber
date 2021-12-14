@@ -18,27 +18,14 @@
  * Please visit Gherkin By Example at https://github.com/gherkin-by-example 
  * if you need additional information or have any questions.
  */
-package br.masmangan.beecrowd.bee1001.cucumber;
+package br.masmangan.beecrowd.bee1004.cucumber;
 
-public class Calculator {
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
 
-	private int a;
-	private int b;
-
-	public void setA(int a) {
-		this.a = a;
-	}
-
-	public void setB(int b) {
-		this.b = b;
-	}
-
-	public int getSum() {
-		return a + b;
-	}
-
-	public int getProduct() {
-		return a * b;
-	}
+@RunWith(Cucumber.class)
+@CucumberOptions(plugin = {"pretty"})
+public class RunCucumberTest {
 
 }

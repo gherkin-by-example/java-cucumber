@@ -18,27 +18,34 @@
  * Please visit Gherkin By Example at https://github.com/gherkin-by-example 
  * if you need additional information or have any questions.
  */
-package br.masmangan.beecrowd.bee1001.cucumber;
+package br.masmangan.beecrowd.bee1004.cucumber;
 
-public class Calculator {
+import br.masmangan.beecrowd.bee1001.cucumber.Calculator;
 
-	private int a;
-	private int b;
+import java.util.Scanner;
 
-	public void setA(int a) {
-		this.a = a;
+import static java.lang.System.in;
+import static java.lang.System.out;
+
+public final class Main {
+
+	private Main() {
+		
 	}
+	
+	public static void main(String[] args) {
+		Calculator c;
+		Scanner s;
 
-	public void setB(int b) {
-		this.b = b;
-	}
+		c = new Calculator();
+		s = new Scanner(in);
+		
+		c.setA(s.nextInt());
+		c.setB(s.nextInt());
+		
+		s.close();
 
-	public int getSum() {
-		return a + b;
-	}
-
-	public int getProduct() {
-		return a * b;
+		out.printf("PROD = %d%n", c.getProduct());
 	}
 
 }

@@ -18,7 +18,7 @@
 # Please visit Gherkin By Example at https://github.com/gherkin-by-example 
 # if you need additional information or have any questions.
 @system
-Feature: URI1001 CLI
+Feature: Bee1001 CLI
 
 Narrative:
 
