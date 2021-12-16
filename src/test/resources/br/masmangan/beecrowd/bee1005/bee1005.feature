@@ -24,7 +24,7 @@ Feature: Bee1005 CLI
 
   In order to avoid silly mistakes
   As a math novice
-  I want to be told the mean of two numbers
+  I want to be told the average of two numbers
 
   Scenario: Run program with input 5.0 and 7.1 (pos, pos)
 

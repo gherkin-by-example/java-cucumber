@@ -6,10 +6,10 @@ import io.cucumber.java.en.When;
 
 import static org.junit.Assert.assertEquals;
 
-public class EquationSteps {
+public class StudentGradeSteps {
     public static final double DELTA = 0.0001;
 
-    private final Equation equation = new Equation();
+    private final StudentGrade equation = new StudentGrade();
     private double actual;
 
     @Given("first number is {double}")
@@ -20,8 +20,8 @@ public class EquationSteps {
     public void second_number_is(Double b) {
         equation.setB(b);
     }
-    @When("mean is calculated")
-    public void mean_is_calculated() {
+    @When("average is calculated")
+    public void average_is_calculated() {
         actual = equation.getAverage();
     }
     @Then("result should be {double}")

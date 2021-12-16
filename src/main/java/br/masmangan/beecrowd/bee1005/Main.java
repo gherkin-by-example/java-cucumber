@@ -10,17 +10,17 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Equation equation;
+        StudentGrade grade;
         Scanner in;
 
-        equation = new Equation();
+        grade = new StudentGrade();
         in = new Scanner(System.in);
 
-        equation.setA(in.nextDouble());
-        equation.setB(in.nextDouble());
+        grade.setA(in.nextDouble());
+        grade.setB(in.nextDouble());
 
         in.close();
 
-        System.out.printf("MEDIA = %.5f%n", equation.getAverage());
+        System.out.printf("MEDIA = %.5f%n", grade.getAverage());
     }
 }

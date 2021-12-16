@@ -24,17 +24,17 @@ Narrative:
 
 In order to avoid silly mistakes
 As a math novice
-I want to be told the mean of two numbers
+I want to be told the average of two numbers
 
-Scenario Outline: calculate mean of two numbers
+Scenario Outline: calculate average of two numbers
 
 Given first number is <a>
 And second number is <b>
-When mean is calculated
-Then result should be <media>
+When average is calculated
+Then result should be <aaverage>
 
 Examples:
-|  a |  b |  media |
+|  a |  b |  aaverage |
 | 5.0 |  7.1 | 6.43182 |
 |-0.0 |  7.1 | 4.84091 |
 | 10.0 | 10.0 |  10.00000 |

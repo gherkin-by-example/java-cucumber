@@ -1,6 +1,6 @@
 package br.masmangan.beecrowd.bee1005;
 
-public class Equation {
+public class StudentGrade {
     private double a;
     private double b;
 
