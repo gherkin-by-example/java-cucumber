@@ -10,6 +10,9 @@ Problem statements can be found at:
 * https://www.beecrowd.com.br/judge/en/problems/view/1000
 * https://www.beecrowd.com.br/judge/en/problems/view/1001
 * https://www.beecrowd.com.br/judge/en/problems/view/1002
+* https://www.beecrowd.com.br/judge/en/problems/view/1003
+* https://www.beecrowd.com.br/judge/en/problems/view/1004
+* https://www.beecrowd.com.br/judge/en/problems/view/1005
 
 ## Solutions
 
@@ -27,17 +30,17 @@ The original problem statement is first modelled using Gherkin language.
 Two levels of modelling are adopted: system level and domain level, each level has its own Gherkin specification.
 
 For instance, a domain-oriented solution is presented here: 
-https://github.com/gherkin-by-example/java-cucumber/blob/main/src/main/java/br/masmangan/beecrowd/bee1001/cucumber
+https://github.com/gherkin-by-example/java-cucumber/blob/main/src/main/java/br/masmangan/beecrowd/bee1001
 This solution adopts one boundary class (Main.java) and an auxiliary class (Greeting.java).
 
 At the system level the behaviour is described as a text-oriented input and output. 
 This behaviour verifies that the solution can be accepted by BeeCrowd Online Judge.
 * The system level specification is presented here: 
-* https://github.com/gherkin-by-example/java-cucumber/blob/main/src/test/resources/br/masmangan/beecrowd/bee1001/cucumber/bee1001.feature
+* https://github.com/gherkin-by-example/java-cucumber/blob/main/src/test/resources/br/masmangan/beecrowd/bee1001/bee1001.feature
 
 At the domain level the behaviour description adopts a more conceptual style, independent of a system interface. This second level adds a separation of concerns between boundary and model.
 * The domain level specification is presented here: 
-* https://github.com/gherkin-by-example/java-cucumber/blob/main/src/test/resources/br/masmangan/beecrowd/bee1001/cucumber/calculator.feature
+* https://github.com/gherkin-by-example/java-cucumber/blob/main/src/test/resources/br/masmangan/beecrowd/bee1001/calculator.feature
 
 Gherkin specification and solution are a port from Specflow guide.
 * Specflow getting started guide can be found here: https://docs.specflow.org/projects/getting-started/en/latest/index.html
