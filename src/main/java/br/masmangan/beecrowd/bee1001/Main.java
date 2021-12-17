@@ -20,8 +20,6 @@
  */
 package br.masmangan.beecrowd.bee1001;
 
-import br.masmangan.beecrowd.bee1001.Calculator;
-
 import java.util.*;
 import static java.lang.System.out;
 import static java.lang.System.in;

@@ -20,8 +20,6 @@
  */
 package br.masmangan.beecrowd.bee1000;
 
-import br.masmangan.beecrowd.bee1000.Greeter;
-
 import static java.lang.System.out;
 
 public final class Main {

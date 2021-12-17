@@ -20,8 +20,6 @@
  */
 package br.masmangan.beecrowd.bee1002;
 
-import br.masmangan.beecrowd.bee1002.Circle;
-
 import java.util.Scanner;
 
 import static java.lang.System.in;
