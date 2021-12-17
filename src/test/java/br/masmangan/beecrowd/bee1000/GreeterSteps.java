@@ -32,11 +32,13 @@ public class GreeterSteps {
 	private String actual;
 
 	@When("greeting is done")
+	@When("uma saudação é feita")
 	public void greeting_is_done() {
 		actual = g.sayHello();
 	}
 
 	@Then("greeting should be {string}")
+	@Then("a saudação deve ser {string}")
 	public void greeting_should_be(String expected) {
 		assertEquals(expected, actual);
 	}
