@@ -3,6 +3,8 @@ package br.masmangan.beecrowd.bee1005;
 
 import java.util.Scanner;
 
+import static java.lang.System.out;
+
 public class Main {
 
     private Main() {
@@ -21,6 +23,6 @@ public class Main {
 
         in.close();
 
-        System.out.printf("MEDIA = %.5f%n", grade.getAverage());
+        out.printf("MEDIA = %.5f%n", grade.getAverage());
     }
 }
