@@ -24,17 +24,18 @@ Narrative:
 
 In order to avoid silly mistakes
 As a math novice
-I want to be told the average of two numbers
+I want to be told the average of three numbers
 
-Scenario Outline: calculate average of two numbers
+Scenario Outline: calculate average of three numbers
 
 Given first number is <a>
 And second number is <b>
+  And third number is <c>
 When average is calculated
-Then result should be <aaverage>
+Then result should be <average>
 
 Examples:
-|  a |  b |  aaverage |
-| 5.0 |  7.1 | 6.43182 |
-|-0.0 |  7.1 | 4.84091 |
-| 10.0 | 10.0 |  10.00000 |
+|  a |  b |  c | average |
+| 5.0 |  6.0 | 7.0 | 6.3 |
+| 5.0 |  10.0 | 10.0 | 9.0 |
+| 10.0 | 10.0 | 5.0 | 7.5 |
