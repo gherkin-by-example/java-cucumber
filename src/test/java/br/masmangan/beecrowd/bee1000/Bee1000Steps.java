@@ -34,6 +34,7 @@ public class Bee1000Steps {
 	private String actual;
 
 	@When("program runs")
+	@When("o programa executar")
 	public void program_runs() {
 
 		ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
@@ -53,6 +54,7 @@ public class Bee1000Steps {
 	}
 
 	@Then("output should be")
+	@Then("a saída deve ser")
 	public void output_should_be(String expected) {
 		assertEquals(expected, actual);
 	}
