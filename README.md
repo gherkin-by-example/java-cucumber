@@ -2,7 +2,7 @@
 [![Github Actions](https://github.com/gherkin-by-example/java-jbehave/actions/workflows/maven.yml/badge.svg)](https://github.com/gherkin-by-example/java-cucumber/actions/workflows/maven.yml)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=gherkin-by-example_java-cucumber&metric=alert_status)](https://sonarcloud.io/dashboard?id=gherkin-by-example_java-cucumber)
 
-This is a solution to BeeCrowd Bee 1000, 1001, and 1002 problems: greetings, add two numbers, and area of a circle.  
+This is a solution to some BeeCrowd problems using Gherkin specifications.
 
 ## Problem Statements
 
@@ -13,6 +13,7 @@ Problem statements can be found at:
 * https://www.beecrowd.com.br/judge/en/problems/view/1003
 * https://www.beecrowd.com.br/judge/en/problems/view/1004
 * https://www.beecrowd.com.br/judge/en/problems/view/1005
+* https://www.beecrowd.com.br/judge/en/problems/view/1006
 
 ## Solutions
 
