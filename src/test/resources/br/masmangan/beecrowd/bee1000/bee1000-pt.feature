@@ -21,7 +21,7 @@
 # language: pt
 
 @system
-Caracteristica: ILC Bee1000
+Característica: ILC Bee1000
 
 Narrativa:
 
