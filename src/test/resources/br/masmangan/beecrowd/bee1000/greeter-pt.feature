@@ -29,7 +29,7 @@ Para verificar que o sistema funciona
 Sendo um programador novato
 Gostaria de receber uma saudação
 
-Cenário: : Saudação
+Cenário: Saudação
 
 Quando uma saudação é feita
 Então a saudação deve ser "Hello World!"
