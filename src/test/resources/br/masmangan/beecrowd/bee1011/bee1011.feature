@@ -35,6 +35,7 @@ Feature: Bee1011 CLI
     Then output should be
 """
 VOLUME = 113.097
+
 """
 
   Scenario: Input 15
@@ -46,6 +47,7 @@ VOLUME = 113.097
     Then output should be
 """
 VOLUME = 14137.155
+
 """
 
   Scenario: Input 1523
@@ -57,4 +59,5 @@ VOLUME = 14137.155
     Then output should be
 """
 VOLUME = 14797486501.627
+
 """

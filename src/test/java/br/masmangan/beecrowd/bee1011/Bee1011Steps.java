@@ -1,6 +1,5 @@
 package br.masmangan.beecrowd.bee1011;
 
-import br.masmangan.beecrowd.bee1007.Main;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
