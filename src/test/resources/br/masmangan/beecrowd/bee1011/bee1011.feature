@@ -20,56 +20,41 @@
 @system
 Feature: Bee1011 CLI
 
-  Narrative:
-
-  In order to avoid silly mistakes
+  Narrative
+  
+  In order to know the volume of a sphere
   As a math novice
-  I want to be told the difference between products of four numbers
+  I want to be told the volume of a sphere giving only it's radius
 
-  Scenario: Run program with input
-
+  Scenario: Input 3
     Given input is
 """
-5
-6
-7
-8
+3
 """
     When program runs
     Then output should be
 """
-DIFERENCA = -26
-
+VOLUME = 113.097
 """
 
-  Scenario: Run program with input
-
-    Given input is
+  Scenario: Input 15
+    Given input is 
 """
-0
-0
-7
-8
+15
 """
     When program runs
     Then output should be
 """
-DIFERENCA = -56
-
+VOLUME = 14137.155
 """
 
-  Scenario: Run program with input
-
+  Scenario: Input 1523
     Given input is
 """
-5
-6
--7
-8
+1523
 """
     When program runs
     Then output should be
 """
-DIFERENCA = 86
-
+VOLUME = 14797486501.627
 """
