@@ -8,7 +8,6 @@ import static java.lang.System.out;
 
 class Main {
 
-    static double pi = 3.14159;
     private static final DecimalFormat df = new DecimalFormat("0.000");
 
     private Main() {
@@ -22,7 +21,10 @@ class Main {
 
         double value = scanner.nextDouble();
 
-        double result = (4/3.0)*pi*Math.pow(value, 3);
+        Sphere sphere = new Sphere();
+        sphere.setRadius(value);
+
+        double result = sphere.calculate();
 
         out.println("VOLUME = " + df.format(result));
 
