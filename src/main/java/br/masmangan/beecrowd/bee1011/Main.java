@@ -8,7 +8,6 @@ import static java.lang.System.out;
 
 class Main {
 
-    private static final DecimalFormat df = new DecimalFormat("0.000");
 
     private Main() {
 
@@ -26,7 +25,7 @@ class Main {
 
         double result = sphere.calculate();
 
-        out.println("VOLUME = " + df.format(result));
+        out.println("VOLUME = " + result);
 
     }
 
