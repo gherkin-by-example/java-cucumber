@@ -1,24 +1,28 @@
 package br.masmangan.beecrowd.bee1017;
 
-class Main {
+import java.util.Scanner;
 
-    public static int performance = 12;
+import static java.lang.System.out;
+
+
+class Main {
     
     public static float howManyLiters(int time, int avgVelocity) {
         int distance = time * avgVelocity;
-        float liters = (float) distance / (float) performance;
+        float liters = (float) distance / 12.0;
         return liters;
     }
 
     public static void main(String [] args) {
-        float liters1 = howManyLiters(10, 85);
+        Scanner in = new Scanner(System.in);
+
+        int time = in.nextInt();
+        int avgVelocity = in.nextInt();
+        
+        in.close();
+        
+        float liters = howManyLiters(time, avgVelocity);
+        
         System.out.printf("%.3f\n", liters1);
-        
-        float liters2 = howManyLiters(2, 92);
-        System.out.printf("%.3f\n", liters2);
-        
-        float liters3 = howManyLiters(22, 67);
-        System.out.printf("%.3f\n", liters3);
     }
-    
 }

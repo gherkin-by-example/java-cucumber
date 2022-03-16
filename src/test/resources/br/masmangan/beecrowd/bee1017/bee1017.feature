@@ -1,14 +1,48 @@
-Feature: How many fuel
+@system
+Feature: Bee1017 CLI
 
-    I need to know how many fuel is left
+  Narrative:
 
-    Scenario Outline: Guess how many fuel given speed and time
-        Given I'll travel in "<time>" hours at "<speed>" km/h
-        When I go to the gas station
-        Then I'll need "<liters>" liters of gas 
+  I want to know how many liters I need based on travel time and average velocity
 
-    Examples:
-        | time | speed | liters  |
-        | 10   | 85    | 70,833  |
-        | 2    | 92    | 15,333  |
-        | 22   | 67    | 122,833 |
+  Scenario: Run program with input
+
+    Given input is
+"""
+10
+85
+"""
+    When program runs
+    Then output should be
+"""
+70,833
+
+"""
+
+  Scenario: Run program with input
+
+    Given input is
+"""
+2
+92
+"""
+    When program runs
+    Then output should be
+"""
+15,333
+
+"""
+
+  Scenario: Run program with input
+
+    Given input is
+"""
+22
+67
+"""
+    When program runs
+    Then output should be
+"""
+122,833
+
+"""
