@@ -4,12 +4,11 @@ import java.util.Scanner;
 
 import static java.lang.System.out;
 
-
 class Main {
     
     public static float howManyLiters(int time, int avgVelocity) {
         int distance = time * avgVelocity;
-        float liters = (float) distance / 12.0;
+        float liters = (float) ((float) distance / 12.0);
         return liters;
     }
 
@@ -23,6 +22,6 @@ class Main {
         
         float liters = howManyLiters(time, avgVelocity);
         
-        System.out.printf("%.3f\n", liters1);
+        out.printf("%.3f\n", liters);
     }
 }
