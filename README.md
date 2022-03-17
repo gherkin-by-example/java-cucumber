@@ -6,7 +6,7 @@ This is a solution to some BeeCrowd problems using Gherkin specifications.
 
 ## Problem Statements
 
-Problem statements can be found at: 
+Solved problem statements can be found at: 
 * https://www.beecrowd.com.br/judge/en/problems/view/1000
 * https://www.beecrowd.com.br/judge/en/problems/view/1001
 * https://www.beecrowd.com.br/judge/en/problems/view/1002
