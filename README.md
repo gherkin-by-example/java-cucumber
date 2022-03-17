@@ -14,6 +14,7 @@ Problem statements can be found at:
 * https://www.beecrowd.com.br/judge/en/problems/view/1004
 * https://www.beecrowd.com.br/judge/en/problems/view/1005
 * https://www.beecrowd.com.br/judge/en/problems/view/1006
+* https://www.beecrowd.com.br/judge/en/problems/view/1007
 
 ## Solutions
 
