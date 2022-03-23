@@ -16,6 +16,7 @@ class Main {
 
     public static void main(String[] args) {
 
+        final DecimalFormat df = new DecimalFormat("0.000");
         Scanner scanner = new Scanner(System.in);
 
         double value = scanner.nextDouble();
@@ -25,7 +26,7 @@ class Main {
 
         double result = sphere.calculate();
 
-        out.println("VOLUME = " + result);
+        out.println("VOLUME = " + df.format(result));
 
     }
 
