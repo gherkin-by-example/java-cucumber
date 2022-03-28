@@ -20,13 +20,12 @@ public class FuelConsumptionSteps {
         product.setFuel(b);
     }
 
-    }
-    @When("difference is calculated")
+    @When("Consumption is calculated")
     public void different_is_calculated() {
         consumption = product.getConsumption();
     }
-    @Then("result should be {int}")
-    public void result_should_be(int expected) {
+    @Then("result should be {double}")
+    public void result_should_be(double expected) {
         assertEquals(expected, consumption);
     }
 }

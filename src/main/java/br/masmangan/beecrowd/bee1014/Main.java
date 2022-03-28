@@ -5,9 +5,12 @@ public class Main {
 
  public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
-    int x = sc.nextInt();
+    double x = sc.nextDouble();
     double y = sc.nextDouble();
-    double k = x / y;
+    FuelConsumption fuelConsumption = new FuelConsumption();
+    fuelConsumption.setDistance(x);
+    fuelConsumption.setFuel(y);
+    double k = fuelConsumption.getConsumption();
     System.out.println(String.format("%.3f km/l", k));
 
  }
