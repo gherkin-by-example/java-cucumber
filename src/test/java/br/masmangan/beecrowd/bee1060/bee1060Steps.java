@@ -14,12 +14,12 @@ public class bee1060Steps {
     private String input;
     private String actual;
 
-    @Given("input is")
+    @Given("The input is")
     public void input_is(String input) {
         this.input = input;
     }
 
-    @When("program runs")
+    @When("Program runs")
     public void program_runs() throws IOException {
         InputStream inputStream = new ByteArrayInputStream(input.getBytes(StandardCharsets.UTF_8));
 
@@ -44,7 +44,7 @@ public class bee1060Steps {
         System.setIn(previousIn);
     }
 
-    @Then("output should be")
+    @Then("The output should be")
     public void output_should_be(String expected) {
         assertEquals(expected, actual);
     }

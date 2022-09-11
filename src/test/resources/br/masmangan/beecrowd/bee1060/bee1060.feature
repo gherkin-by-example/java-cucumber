@@ -1,6 +1,6 @@
 Feature: Bee1060
     Scenario: Program Runs
-        Given input is
+        Given The input is
         """
         1
         2
