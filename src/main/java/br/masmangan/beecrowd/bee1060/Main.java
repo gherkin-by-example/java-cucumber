@@ -15,8 +15,6 @@ public class Main {
         Scanner scanner = new Scanner(in);
         ArrayList<Integer> inputedNumbers = new ArrayList<Integer>();
 
-        out.printf("Type six numbers to start the program, write one a one, typing the number and pressing enter.%n");
-        
         inputedNumbers.add(scanner.nextInt());
         inputedNumbers.add(scanner.nextInt());
         inputedNumbers.add(scanner.nextInt());
