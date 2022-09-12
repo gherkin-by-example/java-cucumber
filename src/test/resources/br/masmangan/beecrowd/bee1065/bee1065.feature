@@ -18,49 +18,61 @@
 # Please visit Gherkin By Example at https://github.com/gherkin-by-example
 # if you need additional information or have any questions.
 @system
-Feature: Bee1002 CLI
+Feature: Bee1065 CLI
 
-Narrative:
+  Narrative:
 
-In order to avoid silly mistakes
-As a math novice
-I want to be told the area of a circle
+  In order to solve the BeeCrowd problem
+  As a student
+  I want to enter five values and know how many of these values are even.
 
-Scenario: Run program with input 2.00
+  Scenario: Run program with input
 
-Given input is
+    Given input is
 """
-2.00
+13
+14
+15
+16
+17
 """
-When program runs
-Then output should be
+    When program runs
+    Then output should be
 """
-A=12.5664
-
-"""
-
-Scenario: Run program with input 100.64
-
-Given input is
-"""
-100.64
-"""
-When program runs
-Then output should be
-"""
-A=31819.3103
+2 valores pares
 
 """
 
-Scenario: Run program with input 150.00
+  Scenario: Run program with input
 
-Given input is
+    Given input is
 """
-150.00
+0
+0
+7
+8
+4
 """
-When program runs
-Then output should be
+    When program runs
+    Then output should be
 """
-A=70685.7750
+4 valores pares
+
+"""
+
+  Scenario: Run program with input
+
+    Given input is
+"""
+4
+6
+8
+10
+12
+"""
+    When program runs
+    Then output should be
+"""
+5 valores pares
 
 """

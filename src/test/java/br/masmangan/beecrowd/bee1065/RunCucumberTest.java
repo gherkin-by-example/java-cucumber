@@ -18,7 +18,7 @@
  * Please visit Gherkin By Example at https://github.com/gherkin-by-example 
  * if you need additional information or have any questions.
  */
-package br.masmangan.beecrowd.bee1003;
+package br.masmangan.beecrowd.bee1065;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
