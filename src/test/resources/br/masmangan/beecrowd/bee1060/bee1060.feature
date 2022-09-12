@@ -30,16 +30,16 @@ Feature: Bee1060 CLI
 
     Given The input is
 """
+7
+-5
 6
-1
--1
-19
-9
-5
+-3.4
+4.6
+12
 """
     When Program runs
     Then The output should be
 """
-The list have 5 positive numbers.
+4 valores positivos
 
 """

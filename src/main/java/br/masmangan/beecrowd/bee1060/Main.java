@@ -13,24 +13,24 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(in);
-        ArrayList<Integer> inputedNumbers = new ArrayList<Integer>();
+        ArrayList<Double> inputedNumbers = new ArrayList<Double>();
 
-        inputedNumbers.add(scanner.nextInt());
-        inputedNumbers.add(scanner.nextInt());
-        inputedNumbers.add(scanner.nextInt());
-        inputedNumbers.add(scanner.nextInt());
-        inputedNumbers.add(scanner.nextInt());
-        inputedNumbers.add(scanner.nextInt());
+        inputedNumbers.add(scanner.nextDouble());
+        inputedNumbers.add(scanner.nextDouble());
+        inputedNumbers.add(scanner.nextDouble());
+        inputedNumbers.add(scanner.nextDouble());
+        inputedNumbers.add(scanner.nextDouble());
+        inputedNumbers.add(scanner.nextDouble());
 
         scanner.close();
 
         int count = 0;
         for (int i=0; i<inputedNumbers.size(); i++) {
-            if (inputedNumbers.get(i) >= 0) {
+            if (inputedNumbers.get(i) > 0) {
                 count++;
             }
         }
 
-        out.printf("The list have %d positive numbers.%n", count);
+        out.printf("%d valores positivos%n", count);
     }    
 }
