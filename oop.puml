@@ -1,0 +1,150 @@
+@startuml
+
+!theme plain
+
+
+
+class java.lang.System {
+{static}+out : java.io.PrintStream
+{static}+in : java.io.InputStream
+}
+
+class java.io.PrintStream {
++print()
++println()
++printf(String format)
++close()
+}
+
+class java.util.Scanner {
++Scanner(source : java.io.InputStream)
++nextInt() : int
++nextDouble() : double
++close()
+}
+
+class java.lang.Math {
+{static}+pow(a : double, b : double) : double
+{static}+sqrt(a : double) : double
+}
+
+class masmangan.beecrowd.Greeter {
++sayHello() : String
+}
+
+class masmangan.beecrowd.Bee1000 {
+{static}+main(args : String[])
+}
+
+masmangan.beecrowd.Bee1000 ..> masmangan.beecrowd.Greeter
+masmangan.beecrowd.Bee1000 ..> java.util.Scanner
+masmangan.beecrowd.Bee1000 ..> java.lang.String
+masmangan.beecrowd.Greeter ..> java.lang.String
+
+
+class masmangan.beecrowd.Calculator {
+-a: int
+-b: int
++setA(a : int)
++setB(b : int)
++getSum() : int
++getProduct() : int
+}
+
+class masmangan.beecrowd.Bee1001 {
+{static}+main(args : String[])
+}
+
+masmangan.beecrowd.Bee1001 ..> masmangan.beecrowd.Calculator
+masmangan.beecrowd.Bee1001 ..> java.util.Scanner
+masmangan.beecrowd.Bee1001 ..> java.lang.String
+
+class masmangan.beecrowd.Circle {
+{static}+PI : double = 3.14159
+-radius : double
++setRadius(radius : double)
++setB(b : int)
++getSum() : int
++getProduct() : int
+}
+
+class masmangan.beecrowd.Bee1002 {
+{static}+main(args : String[])
+}
+
+masmangan.beecrowd.Bee1002 ..> masmangan.beecrowd.Circle
+masmangan.beecrowd.Bee1002 ..> java.util.Scanner
+masmangan.beecrowd.Bee1002 ..> java.lang.String
+
+class masmangan.beecrowd.Bee1003 {
+{static}+main(args : String[])
+}
+
+masmangan.beecrowd.Bee1003 ..> masmangan.beecrowd.Calculator
+masmangan.beecrowd.Bee1003 ..> java.util.Scanner
+masmangan.beecrowd.Bee1003 ..> java.lang.String
+
+class masmangan.beecrowd.Bee1004 {
+{static}+main(args : String[])
+}
+
+masmangan.beecrowd.Bee1004 ..> masmangan.beecrowd.Calculator
+masmangan.beecrowd.Bee1004 ..> java.util.Scanner
+masmangan.beecrowd.Bee1004 ..> java.lang.String
+
+class masmangan.beecrowd.StudentGrade2 {
+-a: double
+-b: double
++setA(a : double)
++setB(b : double)
++getAverage() : double
+}
+
+class masmangan.beecrowd.Bee1005 {
+{static}+main(args : String[])
+}
+
+masmangan.beecrowd.Bee1005 ..> masmangan.beecrowd.StudentGrade2
+masmangan.beecrowd.Bee1005 ..> java.util.Scanner
+masmangan.beecrowd.Bee1005 ..> java.lang.String
+
+class masmangan.beecrowd.StudentGrade3 {
+-a : double
+-b : double
+-c : double
++setA(a : double)
++setB(b : double)
++setC(c : double)
++getAverage() : double
+}
+
+class masmangan.beecrowd.Bee1006 {
+{static}+main(args : java.lang.String[])
+}
+
+masmangan.beecrowd.Bee1006 ..> masmangan.beecrowd.StudentGrade3
+masmangan.beecrowd.Bee1006 ..> java.util.Scanner
+masmangan.beecrowd.Bee1006 ..> java.lang.String
+
+class masmangan.beecrowd.Product {
+-a : int
+-b : int
+-c : int
+-d : int
++setA(a : int)
++setB(b : int)
++setC(c : int)
++setD(d : int)
++getDifference() : int
+}
+
+class masmangan.beecrowd.Bee1007 {
+{static}+main(args : String[])
+}
+
+masmangan.beecrowd.Bee1007 ..> masmangan.beecrowd.Product
+masmangan.beecrowd.Bee1007 ..> java.util.Scanner
+masmangan.beecrowd.Bee1007 ..> java.lang.String
+
+masmangan ---[hidden]d---> java
+@enduml
